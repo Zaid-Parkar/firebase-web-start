@@ -1,3 +1,8 @@
+// ...
+// Add the Firebase products and methods that you want to use
+import { getAuth, EmailAuthProvider } from 'firebase/auth';
+
+import {} from 'firebase/firestore';
 // Import stylesheets
 import './style.css';
 // Firebase App (the core Firebase SDK) is always required
@@ -50,3 +55,24 @@ async function main() {
   // const ui = new firebaseui.auth.AuthUI(auth);
 }
 main();
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'firebase/app';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: 'AIzaSyCXb9DQIufWQKZ0HVD2DGPeLyDL_8PBjms',
+  authDomain: 'fir-web-codelab-b251e.firebaseapp.com',
+  projectId: 'fir-web-codelab-b251e',
+  storageBucket: 'fir-web-codelab-b251e.appspot.com',
+  messagingSenderId: '963598897889',
+  appId: '1:963598897889:web:5071553c74cf854540dda0',
+};
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
+
+initializeApp(firebaseConfig);
+auth = getAuth();
